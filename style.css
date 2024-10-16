@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/*Original color: #fef6dd*/
+/* Good Prim Option: EEE2DC, #F5E6CC, #F2F2F2, #F7F9FB, #F0EBF4, #F3E0DC, #F4E4C1, e7e3d4, ececec, #edeae5, #ecf3fe [custom made, skyblue ish], ffede7 [light pink ish] */
+
+/*Could use for button (EDC7B7, FFCB9A, F8E9A1, FFB48F, f78888),*/
+
+body{
+    background-color: #fff8e7; /*Going with this option*/
+    font-family: "Rubik",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+p{
+    font-size: 24px;
+}
+
+img{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+
+.blue-background .container{
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 58%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 58%;
+}
+
+.aboutContainer{
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+    width: 58%;
+}
+
+.statsContainer{
+    margin-top: -5%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 18%;
+    width: 58%;
+}
+
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headingContainer h2{
+    font-size: 28px;
+}
+
+.headingContainer a{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.headingContainer a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.headingLink{
+    margin-left: 10px;
+}
+
+.headLineContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -1%;
+}
+
+.headLineContainerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headLineName{
+    font-size: 67px;
+    margin-top: 14%;
+    margin-bottom: 0%;
+}
+
+.headLineTitle{
+    font-size: 21px;
+}
+
+.mainSection{
+    font-family: sans-serif;
+    font-size: 67px;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.contentContainer p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.gridStatsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10%;
+    column-gap: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58%;
+}
+
+.gridStatsContainer button{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    padding: 10%;
+    font-family: "Rubik",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 23px;
+    font-style: normal;
+    text-align: center;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.gridStatsContainer button:hover{
+    background-color: rgb(250, 159, 149);
+}
+
+.teamsNavigationContainer{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.teamsNavigationContainer li{
+    font-size: 28px;
+    margin-bottom: 12%;
+}
+
+.teamsNavigationContainer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.teamsNavigationContainer a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.teamsNavigationContainer .logosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -30%;
+    row-gap: 0%;
+}
+
+.bmwLogo, .rbrLogo{
+    width: 200px;
+    height: 114.29px;
+    object-fit: cover;
+}
+
+.strLogo,.ferrariLogo,.astonMartinLogo{
+    width: 200px;
+    height: 114.29px;
+}
+
+.teamContainer{
+    margin-bottom: 18%;
+}
+
+.teamYearImgContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -3%;
+}
+
+.teamYearSubTitle{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.imgContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgContentContainer p{
+    margin-bottom: 5px;
+}
+
+.imgContentContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.imgYearContentContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12%;
+}
+
+.yearContentContainer {
+    display: flex;
+    align-items: center;
+    margin-top:3%;
+}
+
+.yearContentContainer div{
+    flex:1;
+    text-align: left;
+}
+
+.yearContentContainer p{
+    margin-top: 0px;
+}
+
+.yearContentContainer h1{
+    font-size: 30px;
+    flex:1;
+    text-align: center;
+
+}
+
+.yearTopContentContainer h1{
+    font-size: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+

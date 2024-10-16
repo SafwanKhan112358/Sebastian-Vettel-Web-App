@@ -3,234 +3,562 @@
 
     <head>
         <title>Sebastian Vettel Webpage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <header>
-            <h2>Sebastian Vettel</h2>
-            <nav>
-                <a href="#About Section">About</a>
-                <a href="#Stats Section">Stats</a>
-                <a href="#F1 Career Section">F1 Career</a>
-            </nav>
+        <header class="blue-background">
+            <div class = "container">
+
+                <nav class="headingContainer">
+                    <h2>Sebastian Vettel</h2>
+                    <div>
+                        <a class="headingLink" href="#About Section">About</a>
+                        <a class="headingLink" href="#Stats Section">Stats</a>
+                        <a class="headingLink" href="#F1Career Section">F1 Career</a>
+                    </div>
+                </nav>
+
+                <div class="headLineContainer">
+                    <div class="headLineContainerContent">
+                        <h1 class="headLineName">Sebastian Vettel</h1>
+                        <h3 class="headLineTitle">Formula 1 Driver & 4-Time F1 World Champion</h3>
+                    </div>
+                    
+                    <img class="headLineImage" src="Images/MainPhoto_SebVettel.jpg">
+                </div>
+            </div>
         </header>
         
         <main>
-
-            <h1>Sebastian Vettel</h1>
-            <h3>Formula 1 Driver</h2>
-            <h3>4-Time F1 World Champion</h3>
-            <img src="Images/MainPhoto_SebVettel.jpg">
+            <!--
+            <section>
+                <h1 class="HeadlineName">Sebastian Vettel</h1>
+                <h3 class="HeadlineTitle">Formula 1 Driver & 4-Time F1 World Champion</h2>
+                <img src="Images/MainPhoto_SebVettel.jpg">
+            </section> -->
 
             <section id="About Section">
-                <h1>About</h1>
-                <p>Sebastian Vettel was an F1 Driver from 2007-2022</p>
-                <p>He drove for <strong>5</strong> teams: BMW Sauber, Scuderia Toro Rosso,
-                Scuderia Ferrari, and Aston Martin</p>
-                <p>He was known as a witty and funny character and was very involved with his teams</p>
+                <div class="aboutContainer">
+                    <h1 class="mainSection">About</h1>
+                    <div class="contentContainer">
+                        <p>Sebastian Vettel was an F1 Driver from <strong>2007-2022</strong>.
+                        He drove for <strong>5</strong> F1 teams: BMW Sauber, Scuderia Toro Rosso, Red Bull Racing,
+                        Scuderia Ferrari, and Aston Martin.
+                        He was known to be very involved with his teams, detail orientated, and also a very witty and funny character!</p>
+                    </div>
+                </div>
             </section>
 
             <section id="Stats Section">
-                <h1>Stats</h1>
-                <p>4 F1 World Championships</p>
-                <p>53 Wins</p>
-                <p>122 Podiums</p>
-                <p>57 Pole Positions</p>
-                <p>38 Fastest Laps</p>
+                <div class="statsContainer">
+                    <h1 class="mainSection">Stats</h1>
+                    <div class="gridStatsContainer">
+                        <button><strong>4</strong> F1 Titles</button>
+                        <button><strong>53</strong> Wins</button>
+                        <button><strong>57</strong> Pole Positions</button>
+                        <button><strong>122</strong> Podiums</button>
+                        <button><strong>38</strong> Fastest Laps</button>
+                        <button><strong>300</strong> Race Entries</button>
+                    </div>
+                </div>
             </section>
 
-            <!--Figure out how elements want to be sectioned (
-                either via divs, sections. Just think about it!!)-->
-            <section id="F1 Career Section">
-                <h1>F1 Career</h1>
-                <div>
-                <ol>
-                    <li><a href="#BMW Sauber Section">BMW Sauber</a></li>
-                    <li><a href="#Toro Rosso Section">Scuderia Toro Rosso</a></li>
-                    <li><a href="#Red Bull Section">Red Bull Racing</a></li>
-                    <li><a href="#Ferrari Section">Scuderia Ferrari</a></li>
-                    <li><a href="">Aston Martin</a></li>
-                </ol>
+            <!--Opinion: Logo Should Be Put alongside names in F1 Career Section-->
+            <section id="F1Career Section">
+                <div class="container">
+                    <h1 class="mainSection">F1 Career</h1>
+                        <nav class="teamsNavigationContainer">
+                            <ol>
+                                <li><a href="#BMW Sauber Section">BMW Sauber</a></li>
+                                <li><a href="#Toro Rosso Section">Scuderia Toro Rosso</a></li>
+                                <li><a href="#Red Bull Section">Red Bull Racing</a></li>
+                                <li><a href="#Ferrari Section">Scuderia Ferrari</a></li>
+                                <li><a href="#Aston Martin Section">Aston Martin</a></li>
+                            </ol>
+                            
+                            <div class="logosContainer">
+                                <img src="Images/bmwSauberLogo.webp" class="bmwLogo">
+                                <img src="Images/strLogo.jpg" class="strLogo">
+                                <img src="Images/RBR_Logo.jpg" class="rbrLogo">
+                                <img src="Images/scuderiaFerrariLogo.jpg" class="ferrariLogo">
+                                <img src="Images/Aston Martin_logo.jpg" class="astonMartinLogo">
+                            </div>
+                        </nav>
+
+                    <section>
+                        <section id="BMW Sauber Section">
+                            <div class="teamContainer">
+                                <div class="teamYearImgContainer">
+                                    <h1 class="teamYearSubTitle">BMW Sauber</h1>
+                                    <!--<img src="Images/BMWSauber_Logo.webp">-->
+                                    <h1 class="teamYearSubTitle">2007</h1>
+                                </div>
+                            
+                                <div class="imgYearContentContainer">
+                                    <img src="Images/SebVettel_2007.avif">
+                                    <div class="yearContentContainer">
+                                        <h1>2007</h1>
+
+                                        <div>
+                                            <p>Vettel's F1 Debut came at the 2007 Indianapolis
+                                            Grand Prix. After qualifying 7th, he finished the race
+                                            in 8th place. This made him (at the time) the <strong>youngest points scorer
+                                            in F1 history!</strong></p>   
+                                        </div>
+                                    </div>                             
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="Toro Rosso Section">
+                            <div class="teamContainer">
+
+                                <div class="teamYearImgContainer">
+                                    <h1 class="teamYearSubTitle">Scuderia Toro Rosso</h1>
+                                    <h1 class="teamYearSubTitle">2007 - 2008</h1>
+                                </div>
+                                    <!--<img src="Images/ToroRosso_Logo.jpg">-->
+
+                                <div class="imgYearContentContainer">
+                                    <img src="Images/SebVettel_2008_ii.jpg">
+                                    <div class="yearContentContainer">
+                                        <h1>2007</h1>
+
+                                        <div>
+                                            <p>After his debut with BMW Sauber, he was transferred
+                                            to Scuderia Toro Rosso for the remainder of the <strong>2007</strong> season.
+                                            He made his deubt with the team at the Hungarian Grand Prix. In the 2007 season, he notably
+                                            finished in <strong>4th place</strong> at the <strong>Shanghai Grand Prix</strong>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="yearContentContainer">
+                                        <h1>2008</h1>
+
+                                        <div>
+                                            <p>In the 2008 season, despite a tough start, he finished in <strong>5th position</strong>
+                                            at the tight and twisty <strong>Monaco Grand Prix</strong>. However, his most notable achievement of the season
+                                            was <strong>winning</strong> the <strong>Italian Grand Prix</strong>. It was a perdominantly rain-filled race weekend. Despite
+                                            that, Vettel started from pole and comfortably won the race.</p>
+
+                                            <p>At just <strong>21</strong> years of age, 
+                                               he was (at the time) F1's <strong>youngest Race 
+                                               Winner</strong>! For 2009, he was promoted to the senior Red Bull Racing Team!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>  
+
+                        <section id="Red Bull Section">
+                            <div class="teamContainer">
+
+                                <div class="teamYearImgContainer">
+                                    <h1 class="teamYearSubTitle">Red Bull Racing</h1>
+                                    <h1 class="teamYearSubTitle">2009 - 2014</h1>
+                                    <!--<img src="Images/RBR_Logo.jpg">-->
+                                </div>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2009.webp">
+                                        <div class="yearContentContainer">
+                                            <h1>2009</h1>
+
+                                            <div>
+                                                <p>Vettel earned his <strong>first win</strong> and <strong>pole position</strong> with Red Bull at the Shanghai Grand Prix. He added <strong>3</strong> 
+                                                    more wins, in Great Britain, Japan, and Abu Dhabi.</p>
+
+                                                <p>Despite a strong season, he finished <strong>2nd place</strong> in the Championship, just behind Jenson Button. </p>
+                                                
+                                                <p>In the 2009 season, he earned <strong>4 wins</strong>, <strong>4 poles</strong>, and <strong>8 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2010.webp">
+                                        <div class="yearContentContainer">
+                                            <h1>2010</h1>
+                                            
+                                            <div>
+                                                <p>In 2010, he continued his form, winning on tracks in Malaysia, Valencia, and Japan.
+                                                Despite Vettel's fine form, he suffered multiple reliability problems throughout the season.</p>
+                                                
+                                                <p>Prior to the season finale at Abu Dhabi, Vettel was in <strong>3rd place</strong> in the Championship. He was <strong>7 points</strong> 
+                                                    behind his teammate, Mark Webber, and <strong>15 points</strong> behind championship leader, Fernando Alonso.</p>
+
+                                                <p>In spite of this, he started the final race from <strong>pole</strong> and <strong>won</strong> the race! With his stellar performance and poor performances
+                                                from his rivals in the race, Vettel won his <strong>1st F1 Drivers' World Champsionship!</strong></p>
+
+                                                <p>In the 2010 season, he earned <strong>5 wins</strong>, <strong>10 poles</strong>, and <strong>10 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2011.avif">
+                                        <div class="yearContentContainer">
+                                            <h1>2011</h1>
+
+                                            <div>
+                                                <p>In 2011, Vettel had a very dominant season. The combination of the <strong>dominant</strong> Red Bull car and Vettel's <strong>all-round speed</strong> 
+                                                   proved to be too good for the rest!</p>
+
+                                                <p>In a season of <strong>19 races</strong>, he achieved <strong>11 wins</strong>, <strong>15 poles</strong>, and <strong>17 podiums</strong>. With these performances, he achieved his <strong>2nd F1 Drivers' World Championship</strong>!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2012.jpg">
+                                        
+                                        <div class="yearTopContentContainer">
+                                            <h1>2012</h1>
+
+                                            <div>
+                                                <p>The 2012 season was a much more challenging season for Vettel and his team. In the first 8 races, Vettel
+                                                   won <strong>1</strong> race, at the <strong>Bahrain Grand Prix</strong>.</p>
+
+                                                <p>Prior to the Singapore Grand Prix (14th race of the season), Vettel was <strong>39 points</strong> behind championship leader, Fernando Alonso.
+                                                    From Singapore onwards, he had <strong>4 straight victories</strong>, in Singapore, Japan, South Korea, and India. At this point, he had taken back
+                                                    the championship lead.</p>
+
+                                                <p>The last couple of races provided challenging conditions to Vettel. In the Abu Dhabi Grand Prix, Vettel started from the <strong>back of the grid</strong>, since in Qualifying, his car failed to meet fuel regulations.
+                                                In spite of this, Vettel went from <strong>last to 3rd place</strong>! During the race, he collided with Bruno Senna and 
+                                                on a separate occasion, he also collided with the DRS board, to avoid crashing into Daniel Ricciardo</p>
+
+                                                <p>The season finale was in Brazil. Prior to the race, Vettel was <strong>13 points</strong> ahead of Fernando Alonso.
+                                                The race proved to be extremely challenging for Vettel. At the start of the race, Vettel was <strong>spun round</strong>, following a collision with Bruno Senna. In spite of the collision, the rainy conditions, and radio problems, 
+                                                Vettel brought his car home in 6th place, which <strong>won</strong> him
+                                                the <strong>Championship</strong> by just <strong>3 points</strong>!</p>
+
+                                                <p>In the 2012 season, Vettel achieved <strong>5</strong> wins, <strong>6</strong> poles, and <strong>10</strong> podiums.
+                                                    Vettel had now become a <strong>3-time F1 World Champion</strong>!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2013.avif">
+                                        <div class="yearContentContainer">
+                                            <h1>2013</h1>
+                        
+                                            <div>
+                                                <p>The 2013 F1 season was another one of Vettel's dominant seasons. In spite of a solid 1st half of the season, 
+                                                    in which he achieved <strong>wins</strong> at the <strong>Malaysian, Bahrain, Canadian, and German</strong> Grand Prix. 
+                                                    His dominance really started from the 2nd half of the season.</p>
+
+                                                <p>From the Belgium Grand Prix to the end of the season (<strong>9 races in total</strong>), Vettel <strong>won the remaining 
+                                                   9 races in a row. </strong> </p>
+
+                                                <p>In the 2013 season, Vettel achieved <strong>13 wins</strong>, <strong>9 poles</strong>, and <strong>16 podiums</strong>.</p>
+
+                                                <p>Vettel had now become a <strong>4-time F1 World Champion</strong>. He was also the <strong>youngest</strong> 4-time World Champion in F1 history. It was now clear that Vettel was among the greatest
+                                                    in F1 History!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2014.jpg">
+                                        <div class="yearContentContainer">
+                                            <h1>2014</h1>
+
+                                            <div>
+                                                <p>2014 marked a new <strong>era</strong> in Formula 1. With a brand new set of technical regulations, there was a <strong>new dominant team</strong> in Formula 1: Mercedes.</p>
+
+                                                <p>Red Bull were <strong>no longer the leading F1 team</strong>, and this reflected on Vettel's performances. 
+                                                He was also partnered with a new and upcoming talent, Daniel Ricciardo.</p>
+
+                                                <p>Vettel endured a difficult 2014 season. He found it challenging to adapt to this new set of rules and was plagued with reliability issues.
+                                                   For the first time since 2007, Vettel had a winless season.</p>
+                                                   
+                                                <p>In the 2014 season, Vettel placed <strong>4th</strong> in the F1 World Championship and achived <strong>4 podiums</strong>.</p>
+
+                                                <p>Near the end of the 2014 season, Vettel announced that from <strong>next season onwards</strong>, he would be driving for the 
+                                                  <strong>renowned Scuderia Ferrari</strong>!</p>
+
+                                                <p>In Vettel's time with Red Bull Racing, he achieved <strong>4 World Championships, 38 wins, 44 poles, and 65 podiums</strong>!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                            
+                        <section id="Ferrari Section">
+                            <div class="teamContainer">
+                                <div class="teamYearImgContainer">
+                                    <h1 class="teamYearSubTitle">Scuderia Ferrari</h1>
+                                    <h1 class="teamYearSubTitle">2015 - 2020</h1>
+                                    <!--<img src="Images/Ferrari_Logo.jpg">-->
+                                </div>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2015.jpg">
+                                        <div class="yearContentContainer">
+                                            <h1>2015</h1>
+
+                                            <div>
+                                                <p>2015 marked the start of Vettel's journey with Scuderia Ferrari!
+                                                2014 proved to be a tough year for Ferrari. In 2014, Ferrari finished a <strong>lowly 
+                                                4th</strong> in the <strong>F1 Constructors Championship</strong>.</p>
+
+                                                <p>At the Malaysian Grand Prix, Vettel <strong>won</strong> his <strong>1st</strong> race with <strong>Ferrari</strong>! This just
+                                                came in his <strong>2nd race</strong> with Ferrari.</p>
+
+                                                <p>Further wins came in Hungary and Singapore. In Singapore, he achieved his <strong>1st pole position</strong> with Ferrari 
+                                                and <strong>dominated</strong> the race!</p>
+
+                                                <p>Despite a resurgent season from both Vettel and Ferrari, the car's overall performance was quite behind Mercedes.</p>
+                                                
+                                                <p>In the 2015 season, Vettel placed <strong>3rd</strong> in the F1 World Championship. He achieved <strong>3 wins</strong>, <strong>1 pole</strong>, and <strong>13 podiums</strong>.
+                                                    Ferrari placed <strong>2nd</strong> in the Constructors Championship, a notable improvement from 2014.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2016.jpg">
+                                        <div class="yearTopContentContainer">
+                                            <h1>2016</h1>
+
+                                            <div>
+                                                <p>2016 proved to be an up and down season for Vettel and Ferrari. It was a season filled with <strong>strategy errors</strong> from <strong>Ferrari</strong> and some driving mistakes. 
+                                                    The car's overall performance was quite <strong>behind Mercedes</strong> and at times, even <strong>behind Red Bull</strong>.</p>
+
+                                                <p>At the <strong>season opener</strong> in Melbourne, Vettel made a <strong>blistering start</strong>, jumping both Mercedes cars and lead the race. However, an <strong>odd strategy</strong> 
+                                                    from <strong>Ferrari</strong> and a <strong>slow pitstop</strong> ultimately caused Vettel to finish <strong>3rd</strong> in the race.</p>
+                                                    
+                                                <p>In Canada, just like Melbourne, Vettel made a <strong>superb start</strong>, jumping both Mercedes cars and lead the race. However, just like Melbourne, Ferrari made the 
+                                                    <strong>wrong strategy</strong> call, causing Vettel to finish <strong>2nd</strong> in the race. He himself also <strong>locked up</strong> a couple of times at the Wall of Champions corner.</p>
+
+                                                <p>Overall, the 2016 season proved to be dissapointing for Vettel and Ferrari. Vettel endured another winless season. 
+                                                In the 2016 season, Vettel placed <strong>4th</strong> in the Championship and earned <strong>7 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2017.jpeg">
+                                        <div class="yearTopContentContainer">
+                                            <h1>2017</h1>
+
+                                            <div>
+
+                                                <p>2017 marked another change in the technical regulations. It helped Ferrari <strong>close up</strong> the <strong>performance gap</strong> to Mercedes.
+                                                For half of the season, the car's <strong>performance</strong> was <strong>on par</strong> with Mercedes.</p>
+
+                                                <p>Vettel started the season very well, <strong>winning 2</strong> out of the <strong>first 3 grand prix</strong>.
+                                                At the Russian Grand Prix, Vettel earned his <strong>2nd pole</strong> with the team. He also went on to <strong>win</strong> 
+                                                the <strong>Monaco</strong> and <strong>Hungarian</strong> Grand Prix. At the <strong>halfway</strong> point of the <strong>season</strong>, 
+                                                Vettel was <strong>leading</strong> the Championship and amassed <strong>4 wins</strong>.</p>
+
+                                                <p>However, in the <strong>2nd half</strong> of the season, Ferrari <strong>lacked overall car performance</strong> compared to Mercedes, and
+                                                Vettel faced <strong>reliability issues</strong>.
+                                                In the Singapore Grand Prix, despite Vettel's <strong>stunning pole position</strong>, he retired from the race, due to an <strong>early collision</strong> 
+                                                with teammate, Kimi Raikkonen and Max Verstappen.Vettel faced <strong>reliability issues</strong> in the Malaysian Grand Prix's Qualifying session, forcing him to start the race from <strong>last</strong>. 
+                                                In the Japanese Grand Prix, Vettel faced <strong>reliability problems</strong> right from the start of the race, forcing him
+                                                into another retirement.</p>
+
+                                                <p>Despite a <strong>pole</strong> at the <strong>Mexican Grand Prix</strong> and <strong>victory</strong> at the <strong>
+                                                Brazilian Grand Prix</strong>, Vettel fell short in his 2017 title quest. In spite of this, Vettel finished <strong>2nd</strong> in the 
+                                                World Championship and achieved <strong>5 wins</strong>, 
+                                                <strong>4 poles</strong>, and <strong>13 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2018.jpg">
+                                        <div class="yearTopContentContainer">
+                                            <h1>2018</h1>
+
+                                            <div>
+
+                                                <p>2018 was a season that consisted of <strong>costly</strong> mistakes from Vettel's side and <strong>Ferrari</strong> 
+                                                    not being <strong>operationally strong</strong>, especially on circuits in which it had the quicker car.</p>
+
+                                                <p>Vettel had the perfect start to the season, winning the <strong>first 2 Grand Prix</strong> in Australia and Bahrain.
+                                                Vettel had a run of <strong>3 pole positions in a row</strong>, in Bahrain, China, and Baku. However, in China, Verstappen collided with Vettel, causing Vettel to finish in 8th. 
+                                                In Baku, it was looking like a comfortable win for Vettel. However, a late safety car put him in 2nd place, behind Bottas. 
+                                                When Vettel tried an <strong>audacious move</strong> on Valterri Bottas, Vettel locked up, causing him to finish in 4th. </p>
+
+                                                <p>Vettel achieved <strong>another pole position and victory</strong> at the Canadian Grand Prix. He added another <strong>victory</strong> 
+                                                to the season, winning at the <strong>British Grand Prix</strong>. At this point,
+                                                Vettel was having a very strong season.</p>
+
+                                                <p>However, a major <strong>turning point</strong> came at his home race, <strong>the German Grand Prix</strong>. Despite Vettel's <strong>dominant pole position</strong>, 
+                                                    the Grand Prix proved to be less straightforward. Vettel was <strong>leading</strong> for much of the race. However, <strong>rainy conditions</strong> 
+                                                    caused Vettel to crash out and retire from the race. His title rival, Lewis Hamilton, started the race from 14th position, and won the race.
+                                                    Vettel bounced back from this setback, going on to <strong>dominate and win</strong> the <strong>Belgian Grand Prix</strong>.</p>
+
+                                                <p>However, from this race onwards, <strong>Ferrari's operational errors</strong> and <strong>lack of car performance</strong>
+                                                and Vettel's <strong>driving mistakes</strong> ultimately ended his title hopes. At the <strong>Italian Grand Prix</strong>, Vettel spun round, 
+                                                after a <strong>collision</strong> with Hamilton. In Singapore, Russia, and Japan, Ferrari lacked overall <strong>car performance</strong> to Mercedes. 
+                                                In Japan, Vettel had a poor qualifying, due to <strong>Ferrari</strong> putting Vettel on the <strong>wrong tires at the wrong time</strong>. Starting from 9th place, 
+                                                Vettel tried an <strong>audacious</strong> overtake on Verstappen, causing Vettel to spin around.
+                                                In the US Grand Prix, Vettel spun around again, after <strong>colliding</strong> with Ricciardo.</p>
+
+                                                <p>Overall, Vettel finished <strong>2nd</strong> in the World Championship, again behind Lewis Hamilton. In this season, Vettel achieved <strong>5 wins</strong>, <strong>5 poles</strong>, 
+                                                   and <strong>12 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2019.jpg">
+                                        <div class="yearTopContentContainer">
+                                            <h1>2019</h1>
+
+                                            <div>
+                                                <p>2019 was another up and down season for Vettel. In 2019, Vettel was partnered alongside the prodigious, upcoming talent, Charles Leclerc. For the first half of the season, Ferrari were 
+                                                    <strong>2nd-best in car performance</strong>, except at power-heavy circuits. In addition to the performance deficit, Vettel made <strong>minor</strong> errors and <strong>Ferrari</strong> 
+                                                    made <strong>operational errors</strong>.</p>
+
+                                                <p>Vettel's <strong>1st pole</strong> of the season came in <strong>Canada</strong>. During the race, Vettel was keeping a marginal lead over Hamilton. 
+                                                    Vettel made a mistake and <strong>locked up</strong>. Despite this, he kept his lead over Hamilton. 
+                                                    However, he was <strong>penalized</strong> for unsafely rejoining the track. Vettel finished first in the race, but was demoted to 2nd, due to his penalty.</p>
+
+                                                <p>Vettel was plagued with <strong>reliability issues</strong> in the qualifying sessions for the Austrian and German Grand Prix. 
+                                                    In Austria, Vettel made a good <strong>comeback</strong>, finishing in 4th. In Germany, despite starting <strong>last</strong>, 
+                                                    he made a <strong>superb comeback</strong>, coming home in <strong>2nd position</strong>.
+                                                </p>
+
+                                                 <p>In the <strong>2nd half</strong> of the season, Ferrari were much more competitive, but Vettel again made <strong>minor</strong> errors and faced <strong>reliabity issues</strong>. 
+                                                    In Italy, Vettel made a mistake, causing him to spin around. 
+                                                    In Singapore, Vettel pulled off a <strong>stunning undercut</strong> and went on to <strong>win his 1st race</strong> of the year.
+                                                    In Japan, Vettel achieved a <strong>dominant pole</strong>. However, he had a poor start in the race, causing him to finish the race in 2nd position. 
+                                                    In the Russian Grand Prix, Vettel made a <strong>fantastic start</strong>, helping him lead the race. However, he retired from the race
+                                                    due to <strong>reliability problems</strong>. In the USA Grand Prix, Vettel encountered a <strong>suspension failure</strong>, causing him to retire from the race.
+                                                </p>
+
+                                                <p>Vettel finished <strong>5th</strong> in the World Championship. In this season, he achieved <strong>1 win</strong>, <strong>2 poles</strong>, and <strong>9 podiums</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                                <section>
+                                    <div class="imgYearContentContainer">
+                                        <img src="Images/SebVettel_2020.jpeg">
+                                        <div class="yearContentContainer">
+                                            <h1>2020</h1>
+
+                                            <div>
+                                                <p>2020 was a difficult season for Vettel and Ferrari. The car's <strong>performance</strong> was perdominantly among <strong>midfield-level cars.</strong>
+                                                Prior to the start of the season, it was also announced that this would be Vettel's <strong>last year with Ferrari</strong>. 
+                                                </p>
+
+                                                <p>Although Vettel achieved <strong>6th place and 7th place finishes</strong> at Hungary and Spain, the car was just not good enough. 
+                                                   His <strong>brightest moment</strong> of the season came in Turkey, in which he finished in <strong>3rd place</strong>.
+                                                </p>
+
+                                                <p>Vettel finished <strong>13th</strong> in the Championship. In the season, he only achieved <strong>1 podium</strong>. 
+                                                    <strong>Ferrari</strong> finished <strong>6th</strong> in the Constructors Championship, which was their 
+                                                    <strong>lowest finishing position</strong> in recent years.
+                                                </p>
+
+                                                <p>Although Vettel didn't win the World Championship at Ferrari, he had a great time at Ferrari. 
+                                                    In his <strong>6 seasons</strong> with Ferrari, he achieved <strong>14 wins</strong>, <strong>12 poles</strong>, and <strong>55 podiums</strong>. 
+                                                    He finished <strong>2nd</strong> in the Championship <strong>twice</strong>!</p>
+
+                                                <p>Vettel's next chapter in F1 was with the <strong>newly branded Aston Martin F1 Team</strong>!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+
+
+                        <section id="Aston Martin Section">
+                            <div class="teamContainer">
+                                <div class="teamYearImgContainer">
+                                    <h1 class="teamYearSubTitle">Aston Martin</h1>
+                                    <h1 class="teamYearSubTitle">2021 - 2022</h1>
+                                    <!--<img src="Images/Aston Martin_logo.jpg">-->
+                                </div>
+
+                            <section>
+                                <div class="imgYearContentContainer">
+                                    <img src="Images/SebVettel_2021.jpg">
+                                    <div class="yearContentContainer">
+                                        <h1>2021</h1>
+                                        <div>
+                                            <p>2021 was Vettel's <strong>1st year</strong> with Aston Martin. For Vettel, the season was a <strong>new form</strong> of life in F1, 
+                                            since the car was <strong>operating</strong> in the midfield.</p>
+                                            <p>Despite a slow start to the season, at the Baku Grand Prix, Vettel had <strong>strong</strong> race pace and he took advantage 
+                                               of the chaos throughout the race. As a result, He finished the race in <strong>2nd place</strong>! It was his <strong>1st podium</strong> with <strong>Aston Martin</strong>
+                                               and it was the <strong>team's 1st ever podium</strong>.</p>
+                                               
+                                            <p>At the Hungarian Grand Prix, Vettel finished the race in <strong>2nd place</strong>. However, he was <strong>later disqualified</strong> since his car did not meet fuel regulations.</p>
+
+                                            <p>Overall, considering the <strong>team's</strong> lack of pace</strong>, Vettel had a <strong>solid debut season</strong> with Aston Martin. 
+                                            Vettel finished <strong>12th</strong> in the Championship. The team finished <strong>7th</strong> in the Constructors 
+                                            Championship.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="imgYearContentContainer">
+                                    <img src="Images/SebVettel_2022.webp">
+                                    <div class="yearContentContainer">
+                                        <h1>2022</h1>
+                                        <div>
+                                            <p>2022 was largely an uncompetitive season for Vettel and Aston Martin. Like 2021, the <strong>car</strong> was <strong>operating in the midfield</strong></p>
+                                            <p>In the <strong>1st half</strong> of the season, Vettel had <strong>solid races</strong> in Imola, Monaco, and Baku. His <strong>highest finishing position of 
+                                               the season</strong> was at <strong>Baku</strong>, in which he finished in <strong>6th position</strong>.</p>
+                                            <p>Prior to the Hungarian Grand Prix, Vettel announced that he will be <strong>retiring from F1</strong> at the <strong>end of the season</strong>. 
+                                               Determined to end the season on a high, he achieved more <strong>points finishes</strong> at Hungary, Belgium, Singapore, Japan, and the United States Grand Prix.</p>
+                                            <p>At the <strong>final Grand Prix</strong> of his <strong>F1 career</strong>, Vettel qualified in 9th position and finished in 10th.</p>
+                                            <p>Although he finished <strong>12th</strong> again in the Championship and his <strong>team</strong> finished <strong>7th</strong> 
+                                            again in the Constructors Championship, this marked the <strong>end</strong> of his time with <strong>Aston Martin</strong>
+                                            and also a <strong>glittering Formula 1 career</strong>!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            </div>
+                        </section>
+
+
+                    </section>
+
                 </div>
-
-                <section>
-                    <section id="BMW Sauber Section">
-                        <h1>BMW Sauber</h1>
-                        <h2>2007</h2>
-                        <img src="Images/BMWSauber_Logo.webp">
-                        <img src="Images/SebVettel_2007.avif">
-
-                        <p>Vettel's official F1 Debut came at the Indianapolis
-                        Grand Prix. After qualifying 7th, he finished the race
-                        in 8th. This made him (at the time) the youngest points scorer
-                        in F1 history!</p>
-                        
-                    </section>
-
-                    <section id="Toro Rosso Section">
-                        <h1>Scuderia Toro Rosso</h1>
-                        <h2>2007-2008</h2>
-                        <img src="Images/ToroRosso_Logo.jpg">
-                        <img src="Images/SebVettel_2008.avif">
-
-                        <p>In spite of his debut with Sauber, he was transferred
-                        to Scuderia Toro Rosso for the remainder of the 2007 season. He 
-                        made his deubt with the team at the Hungarian Grand Prix. In the 2007 season, he notably
-                        finished in 4th place at the Shanghai Grand Prix.</p>
-
-                        <p>In 2008, despite a tough start to the season, he finished in 5h position
-                        at the tight and twisty Monaco Grand Prix. However, his most notable achievement
-                        was winning the Italian Grand Prix. It was wet in qualifying and the race. Despite
-                        that, he started from pole and comfortably won the race. At 21 years of age, he was (at the time) the
-                        youngest F1 Race Winner!</p>
-
-                        <p>For 2009, he was promoted to the Red Bull Racing Team!</p>
-
-                    </section>
-
-                    <section id="Red Bull Section">
-                        <h1>Red Bull Racing</h1>
-                        <h2>2009-2014</h2>
-                        <img src="Images/RBR_Logo.jpg">
-
-                        <section>
-                            <img src="Images/SebVettel_2009.jpg">
-                            <p>2009 marked the first time that Vettel was challenging for the championship.
-                            He earned his first win and pole position with the team at the Shanghai Grand Prix.</p>
-
-                            <p>Despite a strong season, he finished runner's up to Jenson Button. In the season, he earned 4 wins,
-                            4 poles, and 8 podiums.</p>
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2010.webp">
-                            <p>In 2010, he continued his form, winning on tracks like Sepang, Valencia, and Suzuka.
-                            Prior to the season finale at Abu Dhabi, Vettel was 15 points behind championship leader, Fernando Alonso.</p>
-
-                            <p>In spite of this, he started the final race from pole and won the race. With his performance and poor performances
-                            from his rivals, he won his 1st F1 Drivers' World Champsionship!</p>
-
-                            <p>In the 2010 season, he earned 5 wins, 10 poles, and 10 podiums</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2011.avif">
-                            <p>In 2011, Vettel had a very dominant season. The combination of a dominant Red Bull car and Vettel's all-round speed proved to be too good for the rest!</p>
-
-                            <p>In a season of 19 races, he achieved 11 wins, 15 poles and 17 podiums. With these performances, he achieved his 2nd Drivers' World Championship!</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2012.jpg">
-                            <p>The 2012 season was a much more challenging season for Vettel and his Red Bull Team. The first 8 races had 8 different winners. In those 8 races, Vettel
-                            won 1 race, at the Bahrain Grand Prix.</p>
-
-                            <p>Prior to the Singapore Grand Prix (the 14th race of the season), Vettel was 39 points behind championship leader, Fernando Alonso. 
-                            Singapore marked the real start of his championship comeback. He had a run of 4 straight victories, in Singapore, Japan, South Korea, and India. At this point, he had taken back
-                            the championship lead.</p>
-
-                            <p>The last couple of races provided Vettel with adversity. In Abu Dhabi, Vettel had to start from the back of the grid, since his car failed to meet fuel regulations in Qualifying.
-                            In spite of this, Vettel went from last to 3rd place, in spite of collisions with Bruno Senna and the DRS board. He collided with the DRS board to avoid crashing into Daniel Ricciardo.</p>
-
-                            <p>Brazil was the last race of the season. Prior to the race, Vettel was 13 points ahead of Fernando Alonso. The race proved to be extremely challenging for Vettel. At the start of the race,
-                            Vettel was spun round, following a collision with Bruno Senna. However, in spite of the rainy conditions, radio problems, and a damaged car, Vettel brought his car home in 6th place, which won him
-                            the championship by just 3 points!</p>
-
-                            <p>In the 2012 season, Vettel achieved 5 wins, 6 poles, and 10 podiums. Vettel had now become a 3-time world champion!</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2013.avif">
-                            <p>The 2013 season was another one of Vettel's dominant seasons. In spite of a solid 1st half of the season, in which he achieved wins at the Malaysian, Bahrain, Canadian, and German Grand Prix. 
-                            His dominance really started from the 2nd half of the season.</p>
-
-                            <p>From the Belgium Grand Prix to the end of the season [9 races], Vettel won the remaining 9 races in a row. He was crowned world champion at the Indian Grand Prix</p>
-
-                            <p>In the 2013 season, Vettel achieved 13 wins, 9 poles, and 16 podiums. Vettel had now become a 4-time world champion and was the youngest 4-time world champion in F1 history. 
-                            At the time, in terms of F1 World Championships, he was only behind Juan Manuel Fangio and Michael Shumacher. It was now clear that Vettel was considered to be among the greatest
-                            in F1 History!</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2014.jpg">
-                            <p>2014 marked a new era of Formula 1. With a brand new set of technical regulations, there was a new dominant team in Formula 1: Mercedes.
-                            Red Bull were no longer the leading F1 team, and this reflected on Vettel's performances. He was also partnered with a new and upcoming talent, Daniel Ricciardo.</p>
-
-                            <p>Vettel endured a difficult 2014 season. He found it difficult to adapt to this new set of rules and was plagued with reliability issues. For the first time since 2007, 
-                            Vettel had a winless season. In the 2014 season, Vettel placed 4th in the F1 World Championship and achived 4 podiums.</p>
-
-                            <p>At the end of the 2014 season, Vettel announced that from next season onwards, he would be moving to the renowned Scuderia Ferrari!</p>
-
-                            <p>In Sebastian's time with Red Bull Racing, he achieved 4 World Championships, 38 wins, 44 poles, and 65 podiums!</p>
-                        
-                        </section>
-                    
-                    </section>
-                        
-                    <section id="Ferrari Section">
-                        <h1>Scuderia Ferrari</h1>
-                        <h2>2015-2020</h2>
-                        <img src="Images/Ferrari_Logo.jpg">
-
-                        <section>
-                            <img src="Images/SebVettel_2015.jpg">
-                            <p>2015 marked the start of his journey with Scuderia Ferrari! 2014 proved to be a tough year for both Vettel and Ferrari. In 2014, Ferrari finished a lowly 
-                            4th in the constructors championship</p>
-
-                            <p>In his debut race with Ferrari, he finished on the podium, coming home in 3rd place. At the Malaysian Grand Prix, Vettel won his first race with Ferrari! In just his
-                            2nd race with the team, Vettel and Ferrari were back to their winning ways!</p>
-
-                            <p>Further wins came in Hungary and Singapore. In Singapore, he achieved his first pole position with the team and largely dominated the race!</p>
-
-                            <p>Despite a resurgent season from both Vettel and Ferrari, the car's overall performance was quite behind Mercedes. Nonethless, it was a solid season for both Vettel and the team.
-                            In the 2015 season, Vettel placed 3rd in the F1 World Championship (just 44 points behind 2nd place man, Nico Rosberg). He achieved 3 wins, 1 pole, and 13 podiums. Ferrari placed 2nd
-                            in the Constructors Championship, a notable improvement from 2014.</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2016.jpg">
-                            <p>2016 proved to be an up and down season for Vettel and Ferrari. It was a season filled with strategy errors from Ferrari and some driving mistakes. The car's overall performance
-                            was quite behind Mercedes and at times, even behind Red Bull.</p>
-
-                            <p>At the season opener in Melbourne, Vettel made a blistering start, jumping both Mercedes cars and lead the race. However, an odd strategy from Ferrari and a slow pitstop ultimately caused
-                            Vettel to finish 3rd in the race. In Canada, just like Melbourne, Vettel made a superb start, jumping both Mercedes cars and lead the race. However, just like Melbourne, Ferrari made the wrong strategy call, causing Vettel
-                            to finish 2nd in the race. He himself also locked up a couple of times at the Wall of Champions Corner.</p>
-
-                            <p>Overall, the 2016 season proved to be dissapointing for Vettel and Ferrari. Vettel endured another winless season. 
-                            In the 2016 season, Vettel placed 4th in the championship and earned 7 podiums.</p>
-
-                        </section>
-
-                        <section>
-                            <img src="Images/SebVettel_2017.jpeg">
-
-                            <p>2017 marked another change in the technical regulations. It helped Ferrari close up the gap to Mercedes.
-                            For much of the season, the car's performance was on par with Mercedes.</p>
-
-                            <p>Vettel started the season very well, winning the first 2 grand prix, in Australia and Bahrain. At the Russian Grand Prix, Vettel earned his 2nd ever pole with the team. His last pole position
-                            was back in 2015 in Singapore. He also went on to win the Monaco and Hungarian Grand Prix. At the halfway point of the season, Vettel was leading the Drivers Championship and amassed 4 wins.</p>
-
-                            <p>However, from the second half of the season onwards, Ferrari notably lacked overall performance compared to Mercedes, especially in power-dominant tracks,
-                            and Vettel faced reliability issues with the car.In the Singapore Grand Prix, despite Vettel's fantastic pole position, he was involved in an incident at the start of the race, with teammate, Kimi Raikkonen and Max Verstappen. 
-                            This collision was ultimately a racing incident, which was likely caused by poor weather.Vettel faced reliability issues in the Malaysian Grand Prix's qualifying session, forcing him to start the race from last. Although he ended up finishing 4th,
-                            it still increased his championship points deficit.In the Japanese Grand Prix, Vettel faced reliability problems right from the beginning of the race, forcing him
-                            into another retirement.</p>
-
-                            <p>Despite a pole at the Mexican Grand Prix and victory at the Brazilian Grand Prix, Vettel fell short in his 2017 title quest. In spite of this,
-                            2017 marked a massive improvement. Vettel finished 2nd in the World Championship and achieved 5 wins, 4 poles, and 13 podiums.</p>
-                        </section>
-
-                    </section>
-
-
-                </section>
-
 
             </section>
 
