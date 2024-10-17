@@ -6,13 +6,8 @@ body{
     margin: 0;
 }
 
-/*Original color: #fef6dd*/
-/* Good Prim Option: EEE2DC, #F5E6CC, #F2F2F2, #F7F9FB, #F0EBF4, #F3E0DC, #F4E4C1, e7e3d4, ececec, #edeae5, #ecf3fe [custom made, skyblue ish], ffede7 [light pink ish] */
-
-/*Could use for button (EDC7B7, FFCB9A, F8E9A1, FFB48F, f78888),*/
-
 body{
-    background-color: #fff8e7; /*Going with this option*/
+    background-color: #fff8e7;
     font-family: "Rubik",sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
@@ -29,7 +24,6 @@ img{
     border-width: 5px;
 }
 
-
 .blue-background .container{
     margin: 0 auto;
     padding: 40px 0;
@@ -41,7 +35,7 @@ img{
     width: 58%;
 }
 
-.aboutContainer{
+.aboutContainer, .noteContainer{
     margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +58,7 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     font-style: normal;
 }
 
@@ -137,7 +131,6 @@ img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 
 .gridStatsContainer {
     display: grid;
@@ -292,3 +285,17 @@ img{
     text-align: center;
 }
 
+.noteSection{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+}
+
+.noteContainer a{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color:black;
+}
