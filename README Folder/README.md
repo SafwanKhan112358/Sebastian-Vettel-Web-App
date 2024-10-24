@@ -8,6 +8,7 @@ Here's a 2 minute video demo of the website:
 Here are some pictures of the website:
 
 Headline Section:
+
 (<Headline Section.png>)
 
 Stats Section:
